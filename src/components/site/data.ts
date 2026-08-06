@@ -15,11 +15,11 @@ import g6 from "@/assets/gallery-6.jpg";
 
 export const CONTACT = {
   address: "Kosgahawella, Aluthwala, Ambalangoda, Sri Lanka",
-  phone: "+94 77 123 4567",
-  phoneHref: "tel:+94771234567",
-  whatsapp: "+94 77 123 4567",
-  whatsappHref: "https://wa.me/94771234567",
-  email: "info@rcvti.lk",
+  phone: "+94 76 268 7676",
+  phoneHref: "tel:+94762687676",
+  whatsapp: "+94 76 268 7676",
+  whatsappHref: "https://wa.me/94762687676",
+  email: "rc.doc.vti.2023@gmail.com",
   mapLink: "https://maps.app.goo.gl/FWqpyB8fjVFJiJh46",
   mapEmbed:
     "https://www.google.com/maps?q=Kosgahawella,+Aluthwala,+Ambalangoda,+Sri+Lanka&output=embed",
