@@ -57,8 +57,8 @@ export function Gallery() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.94, opacity: 0 }}
               transition={{ duration: 0.25 }}
-              src={GALLERY[active].src}
-              alt={GALLERY[active].alt}
+              src={GALLERY[active]!.src}
+              alt={GALLERY[active]!.alt}
               className="max-h-[85vh] w-auto max-w-full rounded-2xl shadow-lift"
             />
             <button

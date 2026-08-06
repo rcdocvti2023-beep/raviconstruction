@@ -15,7 +15,7 @@ export function Testimonials() {
     return () => clearInterval(id);
   }, [go]);
 
-  const t = TESTIMONIALS[index];
+  const t = TESTIMONIALS[index]!;
 
   return (
     <section className="section-pad bg-secondary/50">
