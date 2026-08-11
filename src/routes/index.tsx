@@ -3,7 +3,6 @@ import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Stats } from "@/components/site/Stats";
 import { About } from "@/components/site/About";
-
 import { WhyUs } from "@/components/site/WhyUs";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
@@ -15,11 +14,13 @@ import { FloatingActions } from "@/components/site/FloatingActions";
 import { FAQS, CONTACT } from "@/components/site/data";
 
 const TITLE = "RCVTI — Heavy Equipment Operator Training, Ambalangoda";
+
 const DESCRIPTION =
   "Ravi Construction Vocational Training Institute offers practical heavy equipment operator training in Ambalangoda: excavator, backhoe, forklift, crane, grader and more.";
 
 export const Route = createFileRoute("/")({
   component: Index,
+
   head: () => ({
     meta: [
       { title: TITLE },
@@ -30,7 +31,19 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+
+    links: [
+      {
+        rel: "canonical",
+        href: "/",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "/favicon.png",
+      },
+    ],
+
     scripts: [
       {
         type: "application/ld+json",
@@ -51,6 +64,7 @@ export const Route = createFileRoute("/")({
           hasMap: CONTACT.mapLink,
         }),
       },
+
       {
         type: "application/ld+json",
         children: JSON.stringify({
@@ -59,7 +73,10 @@ export const Route = createFileRoute("/")({
           mainEntity: FAQS.map((item) => ({
             "@type": "Question",
             name: item.q,
-            acceptedAnswer: { "@type": "Answer", text: item.a },
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.a,
+            },
           })),
         }),
       },
@@ -71,6 +88,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
       <main>
         <Hero />
         <Stats />
@@ -82,6 +100,7 @@ function Index() {
         <Faq />
         <Contact />
       </main>
+
       <Footer />
       <FloatingActions />
     </div>
