@@ -75,7 +75,6 @@ function Index() {
         <Hero />
         <Stats />
         <About />
-        <Courses />
         <WhyUs />
         <Gallery />
         <Testimonials />
