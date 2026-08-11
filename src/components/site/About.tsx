@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal, SectionHeading } from "./Reveal";
 import gallery from "@/assets/gallery-2.jpg";
 import cabin from "@/assets/gallery-1.jpg";
+import { COMPANY } from "./data";
 
 const HIGHLIGHTS = [
   { icon: BadgeCheck, title: "TVEC Registered", text: "Recognised vocational training provider." },
@@ -19,6 +20,15 @@ const HIGHLIGHTS = [
   { icon: Truck, title: "Modern Equipment", text: "Well maintained industry-standard fleet." },
   { icon: Briefcase, title: "Job-Oriented Training", text: "Skills employers ask for, locally and abroad." },
   { icon: HardHat, title: "Safe Learning Environment", text: "Safety drills and supervision at all times." },
+];
+
+const OVERVIEW = [
+  { label: "Established", value: COMPANY.established },
+  { label: "Business Registration No.", value: COMPANY.br },
+  { label: "Experience", value: COMPANY.experience },
+  { label: "Students Trained", value: COMPANY.students },
+  { label: "TVEC Registration", value: COMPANY.tvecRenewed },
+  { label: "TVEC Registration No.", value: COMPANY.tvecRegNo },
 ];
 
 export function About() {
@@ -72,6 +82,24 @@ export function About() {
               </Reveal>
             ))}
           </div>
+        </div>
+
+        <div className="mt-16">
+          <Reveal className="text-center">
+            <h3 className="font-display text-2xl font-bold sm:text-3xl">Company Overview</h3>
+          </Reveal>
+          <dl className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {OVERVIEW.map((item, i) => (
+              <Reveal key={item.label} delay={i * 0.05}>
+                <div className="glass-card h-full p-5">
+                  <dt className="text-xs font-bold tracking-[0.16em] text-muted-foreground uppercase">
+                    {item.label}
+                  </dt>
+                  <dd className="mt-2 font-display text-lg font-extrabold">{item.value}</dd>
+                </div>
+              </Reveal>
+            ))}
+          </dl>
         </div>
 
         <Reveal className="mt-12 flex justify-center" delay={0.1}>
