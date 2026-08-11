@@ -4,7 +4,7 @@ AI Website Generation Prompt
 
 Create a modern, premium corporate website for my company "Ravi Construction Vocational Training Institute".
 
-The design inspiration should be similar to https://highteclanka.com/contact/ in terms of professionalism, clean layout, animations, spacing, typography, and premium appearance, but it must be an original design and not a copy.
+
 
 Style
 
