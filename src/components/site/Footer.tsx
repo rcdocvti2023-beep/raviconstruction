@@ -3,12 +3,12 @@ import logo from "@/assets/rcvti-logo.png.asset.json";
 import { CONTACT, COURSES } from "./data";
 
 const QUICK_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Training Courses", href: "#courses" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Certificates", href: "#certificates" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About Us", href: "/#about" },
+  { label: "Courses", href: "/courses" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Certificates", href: "/#certificates" },
+  { label: "Contact Us", href: "/#contact" },
 ];
 
 const SOCIALS = [
@@ -73,9 +73,14 @@ export function Footer() {
           <h3 className="text-sm font-bold tracking-[0.16em] uppercase">Training Courses</h3>
           <ul className="mt-5 space-y-3 text-sm text-primary-foreground/70">
             {COURSES.map((course) => (
-              <li key={course.name}>
-                <a href="#courses" className="transition-colors hover:text-accent">
-                  {course.name}
+              <li key={course.no}>
+                <a href="/courses" className="transition-colors hover:text-accent">
+                  {course.short}
+                  {course.status === "pending" ? (
+                    <span className="ml-2 text-[0.65rem] tracking-wide uppercase text-accent">
+                      Pending
+                    </span>
+                  ) : null}
                 </a>
               </li>
             ))}

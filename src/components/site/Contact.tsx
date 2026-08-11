@@ -105,9 +105,9 @@ export function Contact() {
                   <option value="" disabled>
                     Select a course
                   </option>
-                  {COURSES.map((course) => (
-                    <option key={course.name} value={course.name}>
-                      {course.name}
+                  {COURSES.filter((course) => course.status === "available").map((course) => (
+                    <option key={course.no} value={course.short}>
+                      {course.short}
                     </option>
                   ))}
                 </select>
