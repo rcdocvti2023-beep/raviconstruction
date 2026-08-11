@@ -22,7 +22,7 @@ export function StatusBadge({ status }: { status: Course["status"] }) {
 export function CourseCard({ course }: { course: Course }) {
   return (
     <article className="glass-card flex h-full flex-col overflow-hidden p-0 transition-shadow duration-300 hover:shadow-lift">
-      {course.image ? (
+      {course.image && course.status === "available" ? (
         <img
           src={course.image}
           alt={`${course.short} operator training at RCVTI`}
