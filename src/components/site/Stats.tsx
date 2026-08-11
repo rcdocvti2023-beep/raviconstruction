@@ -3,8 +3,8 @@ import { useInView } from "motion/react";
 import { Reveal } from "./Reveal";
 
 const STATS = [
-  { value: 5000, suffix: "+", label: "Students Trained" },
-  { value: 15, suffix: "+", label: "Years Experience" },
+  { value: 1500, suffix: "+", label: "Students Trained" },
+  { value: 13, suffix: " Years", label: "Experience" },
   { value: 100, suffix: "%", label: "Practical Training" },
   { value: 8, suffix: "+", label: "Heavy Machines" },
 ];
