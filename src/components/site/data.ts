@@ -1,11 +1,7 @@
 import excavator from "@/assets/course-excavator.jpg";
 import backhoe from "@/assets/course-backhoe.jpg";
 import forklift from "@/assets/course-forklift.jpg";
-import wheelLoader from "@/assets/course-wheel-loader.jpg";
 import grader from "@/assets/course-grader.jpg";
-import bulldozer from "@/assets/course-bulldozer.jpg";
-import crane from "@/assets/course-crane.jpg";
-import roller from "@/assets/course-roller.jpg";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
@@ -26,70 +22,89 @@ export const CONTACT = {
   regNo: "REG.NO. G/7/422",
 };
 
+export const COMPANY = {
+  established: "2013.09.06",
+  br: "BR :- G/7/422",
+  experience: "13 years of experience",
+  students: "More than 1500+ students",
+  tvecRenewed: "Renewed on 2026.03.27",
+  tvecRegNo: "Reg NO:- P04/0230",
+};
+
 export type Course = {
-  name: string;
-  image: string;
-  duration: string;
+  no: string;
+  title: string;
+  short: string;
+  image?: string;
+  duration?: string;
+  fee?: string;
+  status: "available" | "pending";
   description: string;
 };
 
 export const COURSES: Course[] = [
   {
-    name: "Excavator",
-    image: excavator,
-    duration: "1 – 3 months",
-    description:
-      "Master trenching, loading and slope work on tracked excavators with full pre-start safety routines.",
-  },
-  {
-    name: "Backhoe Loader",
+    no: "01",
+    title: "Certificate for Construction Equipment Operator (Backhoe Loader)",
+    short: "Backhoe Loader",
     image: backhoe,
-    duration: "1 – 2 months",
+    duration: "30 Days",
+    fee: "Rs. 1,000/=",
+    status: "available",
     description:
       "Operate both loader and backhoe ends confidently for utility, drainage and site clearing work.",
   },
   {
-    name: "Forklift",
+    no: "02",
+    title: "Certificate for Construction Equipment Operator (Excavator)",
+    short: "Excavator",
+    image: excavator,
+    duration: "30 Days",
+    fee: "Rs. 1,000/=",
+    status: "available",
+    description:
+      "Master trenching, loading and slope work on tracked excavators with full pre-start safety routines.",
+  },
+  {
+    no: "03",
+    title: "Certificate for Heavy Vehicle Operator (Fork Lift Truck)",
+    short: "Fork Lift Truck",
     image: forklift,
-    duration: "2 – 4 weeks",
+    duration: "14 Days",
+    fee: "Rs. 1,000/=",
+    status: "available",
     description:
       "Warehouse and yard handling, load charts, stacking discipline and safe manoeuvring in tight spaces.",
   },
   {
-    name: "Wheel Loader",
-    image: wheelLoader,
-    duration: "1 – 2 months",
-    description:
-      "Bucket loading cycles, stockpile management and truck loading techniques used on real sites.",
-  },
-  {
-    name: "Motor Grader",
+    no: "04",
+    title: "Certificate for Construction Equipment Operator (Motor Grader)",
+    short: "Motor Grader",
     image: grader,
-    duration: "1 – 2 months",
+    status: "pending",
     description:
       "Blade control, road formation, cambering and fine grading for road construction projects.",
   },
   {
-    name: "Bulldozer",
-    image: bulldozer,
-    duration: "1 – 2 months",
+    no: "05",
+    title: "Certificate for Welder",
+    short: "Welder",
+    status: "pending",
     description:
-      "Earth moving, land clearing and push-loading on tracked dozers with slope safety practice.",
+      "Practical welding skills for construction and fabrication work, with workshop safety training.",
   },
+];
+
+export const COURSE_INFO = [
+  { label: "Registration Fee", value: "Rs. 1,000/= for every course" },
+  { label: "Accommodation", value: "Free accommodation is provided." },
   {
-    name: "Crane",
-    image: crane,
-    duration: "1 – 3 months",
-    description:
-      "Rigging basics, load charts, signalling and controlled lifting with mobile crane operations.",
+    label: "Meals",
+    value:
+      "Breakfast, lunch and dinner are available separately and must be paid for separately.",
   },
-  {
-    name: "Roller",
-    image: roller,
-    duration: "2 – 4 weeks",
-    description:
-      "Compaction patterns for soil and asphalt, vibration control and finishing quality standards.",
-  },
+  { label: "Daily Course Starting Time", value: "08:00 AM" },
+  { label: "Daily Course Ending Time", value: "04:00 PM" },
 ];
 
 export const GALLERY = [

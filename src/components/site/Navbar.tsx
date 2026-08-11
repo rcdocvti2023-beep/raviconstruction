@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/rcvti-logo.png.asset.json";
 import { CONTACT } from "./data";
 
-const LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Training Courses", href: "#courses" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Certificates", href: "#certificates" },
-  { label: "Contact", href: "#contact" },
+const LINKS: { label: string; href?: string; to?: string }[] = [
+  { label: "Home", href: "/#home" },
+  { label: "About Us", href: "/#about" },
+  { label: "Courses", to: "/courses" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Certificates", href: "/#certificates" },
+  { label: "Contact Us", href: "/#contact" },
 ];
 
 export function Navbar() {
@@ -36,7 +37,7 @@ export function Navbar() {
         aria-label="Main navigation"
         className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 sm:px-6 lg:px-8"
       >
-        <a href="#home" className="flex min-w-0 items-center gap-3">
+        <Link to="/" className="flex min-w-0 items-center gap-3">
           <img
             src={logo.url}
             alt="Ravi Construction Vocational Training Institute logo"
@@ -60,22 +61,25 @@ export function Navbar() {
               Ravi Construction Vocational Training Institute
             </span>
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-1 lg:flex">
-          {LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`relative rounded-full px-3 py-2 text-sm font-medium transition-colors after:absolute after:bottom-1 after:left-3 after:h-0.5 after:w-0 after:bg-accent after:transition-all hover:after:w-[calc(100%-1.5rem)] ${
-                scrolled
-                  ? "text-foreground/80 hover:text-accent"
-                  : "text-primary-foreground/85 hover:text-primary-foreground"
-              }`}
-            >
-              {link.label}
-            </a>
-          ))}
+          {LINKS.map((link) => {
+            const className = `relative rounded-full px-3 py-2 text-sm font-medium transition-colors after:absolute after:bottom-1 after:left-3 after:h-0.5 after:w-0 after:bg-accent after:transition-all hover:after:w-[calc(100%-1.5rem)] ${
+              scrolled
+                ? "text-foreground/80 hover:text-accent"
+                : "text-primary-foreground/85 hover:text-primary-foreground"
+            }`;
+            return link.to ? (
+              <Link key={link.label} to={link.to} className={className}>
+                {link.label}
+              </Link>
+            ) : (
+              <a key={link.label} href={link.href} className={className}>
+                {link.label}
+              </a>
+            );
+          })}
           <Button asChild variant="hero" size="default" className="ml-3 rounded-full">
             <a href={CONTACT.phoneHref}>
               <Phone aria-hidden="true" /> Call Now
@@ -98,16 +102,29 @@ export function Navbar() {
 
       {open ? (
         <div className="mx-4 mt-3 overflow-hidden rounded-3xl border border-border/60 bg-background/95 p-3 shadow-lift backdrop-blur-xl lg:hidden">
-          {LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="block rounded-2xl px-4 py-3 text-sm font-medium text-foreground/85 transition-colors hover:bg-secondary hover:text-accent"
-            >
-              {link.label}
-            </a>
-          ))}
+          {LINKS.map((link) => {
+            const className =
+              "block rounded-2xl px-4 py-3 text-sm font-medium text-foreground/85 transition-colors hover:bg-secondary hover:text-accent";
+            return link.to ? (
+              <Link
+                key={link.label}
+                to={link.to}
+                onClick={() => setOpen(false)}
+                className={className}
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className={className}
+              >
+                {link.label}
+              </a>
+            );
+          })}
           <Button asChild variant="hero" size="xl" className="mt-2 w-full">
             <a href={CONTACT.phoneHref}>
               <Phone aria-hidden="true" /> Call Now
