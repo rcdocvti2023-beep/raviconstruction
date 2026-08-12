@@ -41,18 +41,18 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <Button asChild variant="hero" size="xl">
-              <a href="#courses">
-                View Courses <ArrowRight aria-hidden="true" />
-              </a>
-            </Button>
+           <Button asChild variant="hero" size="xl">
+           <a href="/courses">
+          View Courses <ArrowRight aria-hidden="true" />
+          </a>
+          </Button>
             <Button asChild variant="heroGhost" size="xl">
               <a href="#contact">Contact Us</a>
             </Button>
           </div>
 
           <div className="mt-12 flex flex-wrap items-center gap-3">
-            {["5000+ trained operators", "8 heavy machines", "Free accommodation"].map((item) => (
+            {["1500+ trained operators", "8 heavy machines", "Free accommodation"].map((item) => (
               <span
                 key={item}
                 className="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium text-primary-foreground/90 sm:text-sm"
