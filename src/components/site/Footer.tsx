@@ -12,7 +12,7 @@ const QUICK_LINKS = [
 ];
 
 const SOCIALS = [
-  { icon: Facebook, label: "Facebook", href: "https://facebook.com" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/share/1JPmYPmP1N/" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
   { icon: Youtube, label: "YouTube", href: "https://youtube.com" },
 ];
