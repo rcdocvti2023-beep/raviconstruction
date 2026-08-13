@@ -61,7 +61,7 @@ function StaffPage() {
               <SectionHeading
                 eyebrow={group.eyebrow}
                 title={group.heading}
-                subtitle={group.subtitle}
+                {...(group.subtitle ? { subtitle: group.subtitle } : {})}
               />
               <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {group.members.map((member, i) => (
