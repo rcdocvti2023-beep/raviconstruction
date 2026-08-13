@@ -1,3 +1,7 @@
+import madukaDp from "@/assets/maduka-dp.jpg";
+import sahanDp from "@/assets/sahan-dp.jpg";
+import chathurangaDp from "@/assets/chathuranga-dp.jpg";
+
 export type StaffMember = {
   name: string;
   position: string;
@@ -54,21 +58,21 @@ export const STAFF_GROUPS: StaffGroup[] = [
         position: "Training Instructor Excavator",
         qualification: "(Qualification)",
         email: "madukadilranga1@gmail.com",
-        image: "./assets/maduka-dp.jpg",
+        image: madukaDp,
       },
       {
         name: "Mr. D. D. Sahan Thilakshana Kumara",
         position: "Training Instructor Forklift",
         qualification: "(Qualification)",
         email: "sahanthilakshana3@gmail.com",
-        image: "./assets/sahan-dp.jpg",
+        image: sahanDp,
       },
       {
         name: "Mr. P. G. Chathuranga Shrimal",
         position: "Training Instructor Backoh Loader",
         qualification: "(Qualification)",
         email: "pjchathuranga@gmail.com",
-        image: "./assets/chathuranga-dp.jpg",
+        image: chathurangaDp,
       },
     ],
   },
