@@ -8,6 +8,7 @@ import { CONTACT } from "./data";
 const LINKS: { label: string; href?: string; to?: string }[] = [
   { label: "Home", href: "/#home" },
   { label: "Courses", to: "/courses" },
+  { label: "Staff", to: "/staff" },
   { label: "About Us", href: "/#about" },
   { label: "Gallery", href: "/#gallery" },
   { label: "Certificates", href: "/#certificates" },
