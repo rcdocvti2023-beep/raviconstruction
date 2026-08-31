@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CoursesRouteImport } from './routes/courses'
 import { Route as StaffRouteImport } from './routes/staff'
+import { Route as GalleryIndexRouteImport } from './routes/gallery.index'
+import { Route as GalleryCategoryRouteImport } from './routes/gallery.$category'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +30,59 @@ const StaffRoute = StaffRouteImport.update({
   path: '/staff',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GalleryIndexRoute = GalleryIndexRouteImport.update({
+  id: '/gallery/',
+  path: '/gallery/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryCategoryRoute = GalleryCategoryRouteImport.update({
+  id: '/gallery/$category',
+  path: '/gallery/$category',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/courses': typeof CoursesRoute
   '/staff': typeof StaffRoute
+  '/gallery/$category': typeof GalleryCategoryRoute
+  '/gallery/': typeof GalleryIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/courses': typeof CoursesRoute
   '/staff': typeof StaffRoute
+  '/gallery/$category': typeof GalleryCategoryRoute
+  '/gallery': typeof GalleryIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/courses': typeof CoursesRoute
   '/staff': typeof StaffRoute
+  '/gallery/$category': typeof GalleryCategoryRoute
+  '/gallery/': typeof GalleryIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/courses' | '/staff'
+  fullPaths: '/' | '/courses' | '/staff' | '/gallery/$category' | '/gallery/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/courses' | '/staff'
-  id: '__root__' | '/' | '/courses' | '/staff'
+  to: '/' | '/courses' | '/staff' | '/gallery/$category' | '/gallery'
+  id:
+    | '__root__'
+    | '/'
+    | '/courses'
+    | '/staff'
+    | '/gallery/$category'
+    | '/gallery/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CoursesRoute: typeof CoursesRoute
   StaffRoute: typeof StaffRoute
+  GalleryCategoryRoute: typeof GalleryCategoryRoute
+  GalleryIndexRoute: typeof GalleryIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +108,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StaffRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gallery/': {
+      id: '/gallery/'
+      path: '/gallery'
+      fullPath: '/gallery/'
+      preLoaderRoute: typeof GalleryIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery/$category': {
+      id: '/gallery/$category'
+      path: '/gallery/$category'
+      fullPath: '/gallery/$category'
+      preLoaderRoute: typeof GalleryCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +129,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CoursesRoute: CoursesRoute,
   StaffRoute: StaffRoute,
+  GalleryCategoryRoute: GalleryCategoryRoute,
+  GalleryIndexRoute: GalleryIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
