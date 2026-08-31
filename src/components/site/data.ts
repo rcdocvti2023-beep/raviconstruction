@@ -2,12 +2,6 @@ import excavator from "@/assets/course-excavator.jpg";
 import backhoe from "@/assets/course-backhoe.jpg";
 import forklift from "@/assets/course-forklift.jpg";
 import grader from "@/assets/course-grader.jpg";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
 
 export const CONTACT = {
   address: "Kosgahawella, Aluthwala, Ambalangoda, Sri Lanka",
@@ -105,15 +99,6 @@ export const COURSE_INFO = [
   },
   { label: "Daily Course Starting Time", value: "08:00 AM" },
   { label: "Daily Course Ending Time", value: "04:00 PM" },
-];
-
-export const GALLERY = [
-  { src: g1, alt: "Instructor guiding a trainee inside an excavator cabin", tall: true },
-  { src: g2, alt: "Group of trainees in safety gear at the training ground", tall: false },
-  { src: g4, alt: "Classroom theory session on heavy equipment operation", tall: false },
-  { src: g3, alt: "Trainee operating a wheel loader with instructor support", tall: true },
-  { src: g6, alt: "Row of heavy machines parked at the institute yard", tall: false },
-  { src: g5, alt: "Close-up of hands on excavator joystick controls", tall: true },
 ];
 
 export const FAQS = [
