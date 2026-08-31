@@ -10,7 +10,7 @@ const LINKS: { label: string; href?: string; to?: string }[] = [
   { label: "Courses", to: "/courses" },
   { label: "Staff", to: "/staff" },
   { label: "About Us", href: "/#about" },
-  { label: "Gallery", href: "/#gallery" },
+  { label: "Gallery", to: "/gallery" },
   { label: "Certificates", href: "/#certificates" },
   { label: "Contact Us", href: "/#contact" },
 ];
