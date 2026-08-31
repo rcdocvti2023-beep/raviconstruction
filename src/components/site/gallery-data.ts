@@ -52,11 +52,19 @@ const CONFIG: GalleryCategoryConfig[] = [
     description: "Trenching, loading and slope work with full pre-start safety routines.",
   },
   {
+    folder: "training-moments",
+    title: "Training Moments",
+    date: "May 05, 2026",
+    description:
+      "Machines, classrooms and students at work — a look at daily life at our training ground.",
+  },
+  {
     folder: "other-training",
     title: "Other Training",
     date: "May 20, 2026",
     description: "Motor grader, roller and bulldozer familiarisation at our training ground.",
   },
+
 ];
 
 export type GalleryImage = { src: string; alt: string };
