@@ -1,6 +1,8 @@
 import madukaDp from "@/assets/maduka-dp.jpg";
 import sahanDp from "@/assets/sahan-dp.jpg";
 import chathurangaDp from "@/assets/chathuranga-dp.jpg";
+import kavindudp from "@/assets/kavindu-dp.jpg";
+import nisaldp from "@/assets/nisal-dp.jpg";
 
 export type StaffMember = {
   name: string;
@@ -86,7 +88,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
         name: "Mr. K. M. Kavindu Saranga",
         position: "Temporary Demonstrator",
         email: "Kavindusaranga777@gmail.com",
-        image: "/assets/staff/kavindu-saranga.jpg",
+        image: kavindudp,
       },
       {
         name: "Mr. A. V. P. T. Thilanga",
@@ -98,7 +100,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
         name: "Mr. K. Nisal Nimnaka",
         position: "Temporary Demonstrator",
         email: "Nimnaka.nisal@icloud.com",
-        image: "/assets/staff/nisal-nimnaka.jpg",
+        image: nisaldp,
       },
     ],
   },
