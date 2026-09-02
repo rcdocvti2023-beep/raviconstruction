@@ -9,8 +9,8 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal, SectionHeading } from "./Reveal";
-import gallery from "@/assets/gallery-2.jpg";
-import cabin from "@/assets/gallery-1.jpg";
+import gallery from "@/assets/gallery/training-moments/image-02.jpg";
+import cabin from "@/assets/gallery/training-moments/image-01.jpg";
 import { COMPANY } from "./data";
 
 const HIGHLIGHTS = [
