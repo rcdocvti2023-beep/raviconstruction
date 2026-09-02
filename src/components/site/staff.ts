@@ -3,6 +3,7 @@ import sahanDp from "@/assets/sahan-dp.jpg";
 import chathurangaDp from "@/assets/chathuranga-dp.jpg";
 import kavindudp from "@/assets/kavindu-dp.jpg";
 import nisaldp from "@/assets/nisal-dp.jpg";
+import thilanga from "@/assets/thilanga-dp.jpg";
 
 export type StaffMember = {
   name: string;
