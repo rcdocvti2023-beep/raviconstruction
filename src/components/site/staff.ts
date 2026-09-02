@@ -3,7 +3,7 @@ import sahanDp from "@/assets/sahan-dp.jpg";
 import chathurangaDp from "@/assets/chathuranga-dp.jpg";
 import kavindudp from "@/assets/kavindu-dp.jpg";
 import nisaldp from "@/assets/nisal-dp.jpg";
-import thilanga from "@/assets/thilanga-dp.jpg";
+import thilangadp from "@/assets/thilanga-dp.jpg";
 
 export type StaffMember = {
   name: string;
@@ -95,7 +95,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
         name: "Mr. A. V. P. T. Thilanga",
         position: "Temporary Demonstrator",
         email: "thisaraavpt@gmail.com",
-        image: "/assets/staff/thilanga.jpg",
+        image: thilangadp,
       },
       {
         name: "Mr. K. Nisal Nimnaka",
