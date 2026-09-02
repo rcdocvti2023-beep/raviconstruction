@@ -4,6 +4,9 @@ import chathurangaDp from "@/assets/chathuranga-dp.jpg";
 import kavindudp from "@/assets/kavindu-dp.jpg";
 import nisaldp from "@/assets/nisal-dp.jpg";
 import thilangadp from "@/assets/thilanga-dp.jpg";
+import ravindradp from "@/assets/ravindra-dp.jpg";
+import janakadp from "@/assets/janaka-dp.jpg";
+import nimaldp from "@/assets/nimal-dp.jpg";
 
 export type StaffMember = {
   name: string;
@@ -33,20 +36,20 @@ export const STAFF_GROUPS: StaffGroup[] = [
         name: "Mr. M.W.Ravindra Thushan",
         position: "Managing Director",
         phone: "+94 777 768 556",
-        image: "/assets/staff/ravindra-thushan.jpg",
+        image:ravindradp,
       },
       {
         name: "Mr. Nimalsiri Widanagamage",
         position: "Director General",
         phone: "+94 712 922 008",
-        image: "/assets/staff/nimalsiri-widanagamage.jpg",
+        image: nimaldp,
       },
       {
         name: "Mr. B. Sudath Janaka",
         position: "Training Manager",
         qualification: "(Qualification)",
         phone: "+94 711 213 261",
-        image: "/assets/staff/sudath-janaka.jpg",
+        image: janakadp,
       },
     ],
   },
