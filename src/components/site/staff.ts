@@ -41,14 +41,12 @@ export const STAFF_GROUPS: StaffGroup[] = [
       {
         name: "Mr. Nimalsiri Widanagamage",
         position: "Director General",
-        phone: "+94 712 922 008",
         image: nimaldp,
       },
       {
         name: "Mr. B. Sudath Janaka",
         position: "Training Manager",
         qualification: "(Qualification)",
-        phone: "+94 711 213 261",
         image: janakadp,
       },
     ],
