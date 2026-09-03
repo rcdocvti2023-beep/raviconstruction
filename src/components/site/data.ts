@@ -2,6 +2,7 @@ import excavator from "@/assets/course-excavator.jpg";
 import backhoe from "@/assets/course-backhoe.jpg";
 import forklift from "@/assets/course-forklift.jpg";
 import grader from "@/assets/course-grader.jpg";
+import wheelLoader from "@/assets/course-wheel-loader.jpg";
 
 export const CONTACT = {
   address: "Kosgahawella, Aluthwala, Ambalangoda, Sri Lanka",
