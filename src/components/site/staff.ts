@@ -66,7 +66,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
       {
         name: "Mr. D. D. Sahan Thilakshana Kumara",
         position: "Training Instructor Forklift",
-        qualification: "(Qualification)",
+        qualification: "Constion Equepment Operator NVQ L-3,Heavy Vehicle Operator NVQ L-3",
         email: "sahanthilakshana3@gmail.com",
         image: sahanDp,
       },
