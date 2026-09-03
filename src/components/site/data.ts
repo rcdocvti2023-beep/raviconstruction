@@ -88,6 +88,17 @@ export const COURSES: Course[] = [
     description:
       "Practical welding skills for construction and fabrication work, with workshop safety training.",
   },
+  {
+    no: "06",
+    title: "Certificate for Construction Equipment Operator (Wheel Loader)",
+    short: "Wheel Loader",
+    image: wheelLoader,
+    duration: "16 Days",
+    fee: "Rs. 1,000/=",
+    status: "available",
+    description:
+      "Load, haul and stockpile aggregates with confidence while learning bucket control, machine limits and site safety.",
+  },
 ];
 
 export const COURSE_INFO = [
