@@ -2,6 +2,7 @@ import excavator from "@/assets/course-excavator.jpg";
 import backhoe from "@/assets/course-backhoe.jpg";
 import forklift from "@/assets/course-forklift.jpg";
 import grader from "@/assets/course-grader.jpg";
+import wheelLoader from "@/assets/course-wheel-loader.jpg";
 
 export const CONTACT = {
   address: "Kosgahawella, Aluthwala, Ambalangoda, Sri Lanka",
@@ -86,6 +87,17 @@ export const COURSES: Course[] = [
     status: "pending",
     description:
       "Practical welding skills for construction and fabrication work, with workshop safety training.",
+  },
+  {
+    no: "06",
+    title: "Certificate for Construction Equipment Operator (Wheel Loader)",
+    short: "Wheel Loader",
+    image: wheelLoader,
+    duration: "16 Days",
+    fee: "Rs. 1,000/=",
+    status: "available",
+    description:
+      "Load, haul and stockpile aggregates with confidence while learning bucket control, machine limits and site safety.",
   },
 ];
 
