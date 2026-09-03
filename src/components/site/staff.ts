@@ -45,7 +45,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
       {
         name: "Mr. B. Sudath Janaka",
         position: "Training Manager",
-        qualification: "(Qualification)",
+        qualification: "MSc Trainer ITE(Sigapore),Licen Assesor",
         image: janakadp,
       },
     ],
