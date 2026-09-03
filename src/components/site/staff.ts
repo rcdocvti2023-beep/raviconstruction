@@ -35,7 +35,6 @@ export const STAFF_GROUPS: StaffGroup[] = [
       {
         name: "Mr. M.W.Ravindra Thushan",
         position: "Managing Director",
-        phone: "+94 777 768 556",
         image:ravindradp,
       },
       {
