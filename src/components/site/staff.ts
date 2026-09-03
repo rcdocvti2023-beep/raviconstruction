@@ -8,6 +8,7 @@ import ravindradp from "@/assets/ravindra-dp.jpg";
 import janakadp from "@/assets/janaka-dp.jpg";
 import nimaldp from "@/assets/nimal-dp.jpg";
 import kavindyadp from "@/assets/kavindya-dp.jpg";
+import warunadp from "@/assets/waruna-dp.jpg";
 
 export type StaffMember = {
   name: string;
@@ -117,7 +118,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
         position: "Administrative Officer",
         email: "waruna6kk@gmail.com",
         phone: "+94 912 261 676",
-        image: "/assets/staff/waruna-kaushalya.jpg",
+        image: warunadp,
       },
       {
         name: "Miss. D. D. Kavindya Thathsarani",
