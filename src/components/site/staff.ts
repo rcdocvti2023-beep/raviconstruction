@@ -59,7 +59,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
       {
         name: "Mr. H. L. Maduka Dilranga",
         position: "Training Instructor Excavator",
-        qualification: "(Qualification)",
+        qualification: "Constion Equepment Operator NVQ L-3",
         email: "madukadilranga1@gmail.com",
         image: madukaDp,
       },
@@ -73,7 +73,7 @@ export const STAFF_GROUPS: StaffGroup[] = [
       {
         name: "Mr. P. G. Chathuranga Shrimal",
         position: "Training Instructor Backoh Loader",
-        qualification: "(Qualification)",
+        qualification: "Constion Equepment Operator NVQ L-3",
         email: "pjchathuranga@gmail.com",
         image: chathurangaDp,
       },
