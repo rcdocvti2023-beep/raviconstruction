@@ -59,10 +59,10 @@ const CONFIG: GalleryCategoryConfig[] = [
       "Machines, classrooms and students at work — a look at daily life at our training ground.",
   },
   {
-    folder: "other training",
+    folder: "other-training",
     title: "Other Training",
-    date: "May 20, 2026",
-    description: "Motor grader, roller and bulldozer familiarisation at our training ground.",
+    date: "March 20, 2026",
+    description: "Japan training program.",
   },
 
 ];
