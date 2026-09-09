@@ -82,7 +82,7 @@ export const Route = createFileRoute("/")({
     ],
   }),
 });
-<meta name="google-site-verification" content="5Qzi01CbIg1zySm09SGK_YhDiuboIrJ6mM7TevCq5oU" />
+
 function Index() {
   return (
     <div className="min-h-screen bg-background">
