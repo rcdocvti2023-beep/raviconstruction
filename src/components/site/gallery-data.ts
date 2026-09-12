@@ -2,7 +2,7 @@
 // To add or remove photos, simply drop/delete image files inside
 // src/assets/gallery/<folder>/ — they are picked up automatically.
 
-const modules = import.meta.glob<string>("../../assets/gallery/*/*.{jpg,jpeg,png,webp}", {
+const modules = import.meta.glob<string>("../../assets/gallery/*/*.{jpg,JPG,jpeg,png,webp}", {
   eager: true,
   query: "?url",
   import: "default",
