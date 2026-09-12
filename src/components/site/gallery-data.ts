@@ -65,7 +65,7 @@ const CONFIG: GalleryCategoryConfig[] = [
     description: "Japan training program.",
   },
    {
-    folder: "institute_area",
+    folder: "inastitute_area",
     title: "Institute Area",
     date: "September 12, 2026",
     description: "Skills for Today. Careers for Tomorrow.",
